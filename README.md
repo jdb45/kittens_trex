@@ -53,7 +53,7 @@ https://apps.twitter.com/app/new
 
 Generate access token
 
-Create file called keys.py. Replace XXXX with your keys and secrets
+Open the keys.py file. Replace XXXX with your keys and secrets
 
 ```
 keys = {
