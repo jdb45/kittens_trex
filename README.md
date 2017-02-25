@@ -32,18 +32,8 @@ pip install tweepy
 ```
 
 
-##PCs either use the Linux VM on the lab PCs and follow the directions above, or...
+##PCs Use the Linux VM on the lab PCs and follow the directions above...
 
-Install Windows fork of Redis via NuGet
-
-create virtualenv with python 3, install
-
-```
-pip install huey
-pip install redis
-pip install requests
-pip install tweepy
-```
 
 ## All
 
@@ -53,7 +43,7 @@ https://apps.twitter.com/app/new
 
 Generate access token
 
-Open the keys.py file. Replace XXXX with your keys and secrets
+Create file called keys.py. Replace XXXX with your keys and secrets
 
 ```
 keys = {
@@ -66,6 +56,6 @@ keys = {
 
 ```
 
-Change the menu options in main.py to gif searches of your choice. 
+Change the menu options in main.py to gif searches of your choice.
 
 When done, Control+C to stop the Redis server, Control+C to stop the huey_consumer tasks
