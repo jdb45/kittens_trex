@@ -34,7 +34,6 @@ pip install tweepy
 
 ##PCs Use the Linux VM on the lab PCs and follow the directions above...
 
-
 ## All
 
 Twitter: sign up for new account
