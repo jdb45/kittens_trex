@@ -1,5 +1,6 @@
 import requests
 import tweepy
+import os
 from keys import keys
 from uuid import uuid1       # Use this to generate unique strings for filenames
 from os import path, mkdir
@@ -7,8 +8,11 @@ import logging as log   # Logging is preferable to print() statements
 
 random_gif_url = 'http://api.giphy.com/v1/gifs/random'
 
+
 def tweet_gif(tag):
 
+
+    global filename
     try:
         # Authenticate to Twitter and create api object, used to send tweets
         auth = tweepy.OAuthHandler(keys['TWITTER_KEY'], keys['TWITTER_SECRET'])
@@ -42,5 +46,5 @@ def tweet_gif(tag):
 
     except Exception as e:
         log.error(e)
-
+    return filename
     # TODO better error handling!
